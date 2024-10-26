@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+    --pageColor:rgba(245, 245, 245, 1)
+}
+
+.inputParentElement{
+    @apply border rounded-md w-full text-sm 
+}
+
+
+.invalidInputElement{
+    @apply border border-red-500 relative mb-5
+}
+
+.invalidInputElement::after{
+    content: attr(data-after);
+    @apply absolute -bottom-5 left-0 text-xs text-red-500
+}
+
+.selectedTab{
+    @apply bg-sky-100 text-primary;
+}
+
+.primaryButton{
+   @apply rounded-md font-semibold bg-primary text-white px-4 py-2
+}
+
+.secondaryButton{
+    @apply rounded-md font-semibold bg-secondary text-primary px-4 py-2 ml-4
+}
