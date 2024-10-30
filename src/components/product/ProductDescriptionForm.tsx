@@ -162,7 +162,7 @@ const ProductDescriptionForm = forwardRef(({
                     >
                         <Icon icon={"mage:image-upload"} className=" text-xl" />
                         Upload Image
-                        <input onChange={onImageUpload} accept="image/png, image/gif, image/jpeg" type="file" name="uploadImage" className="w-[1px] h-[1px] invisible" id="uploadImage" />
+                        <input onChange={onImageUpload} accept="image/png, image/gif, image/jpeg" type="file" name="uploadImage" className="hidden" id="uploadImage" />
                     </label>
 
 
